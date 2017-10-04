@@ -1,0 +1,86 @@
+
+input {
+  display: block;
+  border: 0;
+  margin: 1em auto;
+  width: 280px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: $color-white;
+  font-family: 'Paytone One', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 3.38;
+  padding: 0 2em;
+  letter-spacing: .2px;
+  max-width: 100%;
+  color: $color-black;
+
+  @media (min-width: 760px) {
+    height: 56px;
+  }
+
+  &:focus {
+    background-color: $color-gray-light;
+    outline: none;
+  }
+}
+
+.button {
+  display: block;
+  font-family: 'Paytone One', Arial, sans-serif;
+  font-size: 13px;
+  line-height: 44px;
+  letter-spacing: .2px;
+  text-align: center;
+  color: $color-white;
+  width: 162px;
+  height: 46px;
+  border-radius: 100px;
+  background-color: $color-black;
+  border: 0;
+  margin: 2em auto;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 200ms ease-out;
+
+  @media (min-width: 760px) {
+    height: 56px;
+    line-height: 54px;
+  }
+
+  &:hover {
+    color: $color-primary-light;
+  }
+
+  &.big {
+    width: 260px;
+  }
+
+  &.alt-color {
+    margin-top: 3em;
+    color: $color-white;
+    background-color: $color-primary;
+
+    &:hover {
+      color: $color-primary-light;
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color:    $color-gray;
+}
+:-moz-placeholder {
+  color:    $color-gray;
+  opacity:  1;
+}
+::-moz-placeholder {
+  color:    $color-gray;
+  opacity:  1;
+}
+:-ms-input-placeholder {
+  color:    $color-gray;
+}
+::-ms-input-placeholder {
+  color:    $color-gray;
+}

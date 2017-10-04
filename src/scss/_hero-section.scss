@@ -1,0 +1,50 @@
+
+
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; // fix for vertical center in IE11, get's overwritten by min-height
+  min-height: 100vh;
+  background-color: $color-black;
+  color: $color-white;
+  position: relative;
+  transition: min-height steps(1) 1000s; // fix for element height changing on scroll in mobile
+
+  .mascot-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 60px;
+  }
+
+  .mascot {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .down-arrow-button {
+    display: block;
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+    border: 0;
+    margin: 2em auto 0;
+    background: $color-primary url('/assets/images/down-arrow.svg') no-repeat center 15px;
+    background-size: 60%;
+    animation: bounce 10s infinite;
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 24%, 30%, 36%, 40% {
+    transform: translateY(0);
+  }
+  28% {
+    transform: translateY(-20px);
+  }
+  32% {
+    transform: translateY(-10px);
+  }
+}
