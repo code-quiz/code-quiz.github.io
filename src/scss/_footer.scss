@@ -8,6 +8,10 @@ footer {
   color: $color-white;
   font-size: 14px;
 
+  p {
+    font-size: 14px;
+  }
+
   .content-container {
     padding-bottom: 0;
   }
@@ -28,7 +32,7 @@ footer {
 
   .cloudnine-logo {
     display: inline-block;
-    height: 13px;
+    height: 12px;
     width: auto;
   }
 }
