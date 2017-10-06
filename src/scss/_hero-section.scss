@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px; // fix for vertical center in IE11, get's overwritten by min-height
   min-height: 100vh;
   background-color: $color-black;
   color: $color-white;
