@@ -38,12 +38,14 @@ const blinkControl = (time = 120) => {
 };
 
 const blink = (time) => {
-    leftEyelid.animate(time, '>').y(111.04).animate(time, '<').y(95.04);
-    leftEyesocket.animate(time, '>').opacity(0).animate(time, '>').opacity(1);
-    leftEyeball.animate(time, '-').opacity(0).animate(time, '-').opacity(1);
-    rightEyelid.animate(time, '>').y(87.38).animate(time, '<').y(103.38);
-    rightEyesocket.animate(time, '>').opacity(0).animate(time, '>').opacity(1);
-    rightEyeball.animate(time, '-').opacity(0).animate(time, '-').opacity(1);
+    if (!document.hidden) {
+        leftEyelid.animate(time, '>').y(111.04).animate(time, '<').y(95.04);
+        leftEyesocket.animate(time, '>').opacity(0).animate(time, '>').opacity(1);
+        leftEyeball.animate(time, '-').opacity(0).animate(time, '-').opacity(1);
+        rightEyelid.animate(time, '>').y(87.38).animate(time, '<').y(103.38);
+        rightEyesocket.animate(time, '>').opacity(0).animate(time, '>').opacity(1);
+        rightEyeball.animate(time, '-').opacity(0).animate(time, '-').opacity(1);
+    }
 };
 
 const randomDelayInterval = (min, max) => {
