@@ -35,6 +35,6 @@
   "dependencies": {
     "scrollreveal": "^3.3.6",
     "smooth-scroll": "^12.1.5",
-    "svg.js": "^2.6.3"
+    "svg.js": "^2.6.6"
   }
 }
